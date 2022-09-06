@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+* {
+    margin: 0;
+}
+
+:root {
+    --bgColor: hsl(257, 40%, 49%);
+    --activeColor: hsl(300, 69%, 71%);
+    --fontColor: hsl(0, 0%, 100%);
+    --shadowColor: hsl(257, 50%, 32%);
+}
+
+/* Mobile Style */
+body {
+    min-height: 100vh;
+    background-image: url(./images/bg-mobile.svg);
+    background-repeat: no-repeat;
+    background-color: var(--bgColor);
+}
+
+.pageWrapper {
+    padding: 30px;
+}
+
+
+.logo {
+    width: 130px;
+}
+
+.illustration {
+    width: 300px;
+    padding-top: 40px;
+}
+
+.textDiv {
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--fontColor);
+    padding: 30px 0 20px 0;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--fontColor);
+    padding-bottom: 20px;
+}
+
+button {
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--bgColor);
+    background-color: var(--fontColor);
+    border: 0;
+    padding-top: 10px;
+    border-radius: 500px;
+    padding: 8px 65px;
+    box-shadow: 0.1px 2px 15px var(--shadowColor);
+}
+
+button:hover {
+    cursor: pointer;
+    color: var(--fontColor);
+    background-color: var(--activeColor);
+}
+
+footer {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.fa-brands {
+    font-size: 15px;
+    color: var(--fontColor);
+    padding: 8.5px;
+    outline: 2px solid var(--fontColor);
+    border-radius: 100%; 
+}
+
+.fa-brands:nth-child(2) {
+    margin: 0 10px 0 10px;
+}
+
+.fa-brands:hover {
+    color: var(--activeColor);
+    outline-color: var(--activeColor);
+}
+
+/* Desktop Style */
+
+@media screen and (min-width: 1300px) {
+    body {
+        min-height: 100vh;
+        background-image: url(./images/bg-desktop.svg);
+        background-size: 1400px;
+        background-position: 50px -180px;
+        background-repeat: no-repeat;
+        background-color: var(--bgColor);
+    }
+    
+    .pageWrapper {
+        display: flex;
+        padding: 40px 50px 30px 40px;
+    }
+    
+    .logo {
+        width: 150px;
+    }
+    
+    .illustration {
+        padding: 50px 30px 0 0;
+        width: 600px;
+    }
+    
+    .textDiv {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: initial;
+    }
+    
+    h1 {
+        font-size: 30px;
+        padding-bottom: 30px;
+    }
+    
+    p {
+        padding-bottom: 15px;
+        max-width: 400px;
+    }
+    
+    button {
+        font-size: 14px;
+        font-weight: 400;
+        padding: 10px 45px;
+    }
+    
+    
+    footer {
+        text-align: end;
+        margin: 0 100px 0 0;
+    }
+}
